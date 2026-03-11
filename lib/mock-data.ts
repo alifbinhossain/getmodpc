@@ -13,7 +13,7 @@ export const heroSlides: HeroSlide[] = [
     extraInfo: 'Premium Unlocked',
     category: 'Games',
     rating: 4.8,
-    isPremium: true,
+    isVerified: true,
     badge: 'Trending',
     featured: true,
   },
@@ -28,7 +28,7 @@ export const heroSlides: HeroSlide[] = [
     extraInfo: 'Full Version',
     category: 'Design',
     rating: 4.9,
-    isPremium: true,
+    isVerified: true,
     badge: "Editor's Choice",
   },
   {
@@ -42,7 +42,7 @@ export const heroSlides: HeroSlide[] = [
     extraInfo: 'No Ads',
     category: 'Music',
     rating: 4.7,
-    isPremium: true,
+    isVerified: true,
     badge: 'Popular',
   },
   {
@@ -56,7 +56,7 @@ export const heroSlides: HeroSlide[] = [
     extraInfo: 'Pro Features',
     category: 'Productivity',
     rating: 4.6,
-    isPremium: true,
+    isVerified: true,
     badge: 'New',
   },
 ];
@@ -72,7 +72,7 @@ export const popularApps: App[] = [
     extraInfo: 'Premium Unlocked',
     category: 'Social',
     rating: 4.5,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pa2',
@@ -84,7 +84,7 @@ export const popularApps: App[] = [
     extraInfo: 'Full Access',
     category: 'Design',
     rating: 4.8,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pa3',
@@ -96,7 +96,7 @@ export const popularApps: App[] = [
     extraInfo: '4K Streaming',
     category: 'Entertainment',
     rating: 4.7,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pa4',
@@ -108,7 +108,7 @@ export const popularApps: App[] = [
     extraInfo: 'Modded',
     category: 'Communication',
     rating: 4.6,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pa5',
@@ -120,7 +120,7 @@ export const popularApps: App[] = [
     extraInfo: 'Ad-Free',
     category: 'Entertainment',
     rating: 4.9,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pa6',
@@ -132,7 +132,7 @@ export const popularApps: App[] = [
     extraInfo: '365 Activated',
     category: 'Productivity',
     rating: 4.5,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pa7',
@@ -144,7 +144,7 @@ export const popularApps: App[] = [
     extraInfo: 'Unlocked',
     category: 'Communication',
     rating: 4.7,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pa8',
@@ -156,7 +156,7 @@ export const popularApps: App[] = [
     extraInfo: 'Premium',
     category: 'Photography',
     rating: 4.6,
-    isPremium: true,
+    isVerified: true,
   },
 ];
 
@@ -171,7 +171,7 @@ export const popularGames: App[] = [
     extraInfo: 'All DLCs',
     category: 'Action',
     rating: 4.9,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pg2',
@@ -183,7 +183,7 @@ export const popularGames: App[] = [
     extraInfo: 'UC Unlocked',
     category: 'Battle Royale',
     rating: 4.5,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pg3',
@@ -195,7 +195,7 @@ export const popularGames: App[] = [
     extraInfo: 'Full Version',
     category: 'Sports',
     rating: 4.4,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pg4',
@@ -207,7 +207,7 @@ export const popularGames: App[] = [
     extraInfo: 'Gems Mod',
     category: 'Strategy',
     rating: 4.6,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pg5',
@@ -219,7 +219,7 @@ export const popularGames: App[] = [
     extraInfo: 'All Skins',
     category: 'FPS',
     rating: 4.7,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pg6',
@@ -231,7 +231,7 @@ export const popularGames: App[] = [
     extraInfo: 'Unlimited Tokens',
     category: 'Racing',
     rating: 4.5,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pg7',
@@ -243,7 +243,7 @@ export const popularGames: App[] = [
     extraInfo: 'All Skins',
     category: 'Party',
     rating: 4.4,
-    isPremium: true,
+    isVerified: true,
   },
   {
     id: 'pg8',
@@ -255,7 +255,7 @@ export const popularGames: App[] = [
     extraInfo: 'Robux Mod',
     category: 'Sandbox',
     rating: 4.5,
-    isPremium: true,
+    isVerified: true,
   },
 ];
 

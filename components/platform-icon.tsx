@@ -21,8 +21,8 @@ interface PlatformListProps {
 // ─── Size config ──────────────────────────────────────────────────────────────
 
 const SIZE_CONFIG: Record<IconSize, { container: string; icon: string }> = {
-  sm: { container: 'h-5 w-5', icon: 'h-3 w-3' }, // AppCard
-  md: { container: 'h-7 w-7', icon: 'h-4 w-4' }, // HeroAppCard
+  sm: { container: 'size-5', icon: 'size-3' }, // AppCard
+  md: { container: 'size-7', icon: 'size-4' }, // HeroAppCard
 };
 
 // ─── SVG paths (single source of truth) ──────────────────────────────────────

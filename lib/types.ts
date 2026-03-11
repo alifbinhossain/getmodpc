@@ -14,7 +14,7 @@ export interface App {
   version?: string;
   size?: string;
   rating?: number;
-  isPremium?: boolean;
+  isVerified?: boolean;
   updatedAt?: string;
   releaseDate?: string;
 }

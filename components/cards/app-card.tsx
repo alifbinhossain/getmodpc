@@ -2,8 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
+
 import { App } from '@/lib/types';
 import { cn, formatDownloads } from '@/lib/utils';
+
 import { PlatformIconList } from '../platform-icon';
 
 // ─── Types ────────────────────────────────────────────────────────────────────

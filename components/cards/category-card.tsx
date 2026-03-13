@@ -1,9 +1,9 @@
 // components/cards/category-card.tsx
 // ✅ No 'use client' — Link and Card are server-compatible.
-
 import Link from 'next/link';
 
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
+
 import { Category } from '@/lib/types';
 import { cn } from '@/lib/utils';
 
@@ -52,7 +52,7 @@ function getIcon(iconKey: string): React.JSX.Element {
     // ✅ Surfaces unmapped icons during development — was silently falling back
     if (process.env.NODE_ENV === 'development') {
       console.warn(
-        `[CategoryCard] Unmapped icon key: "${iconKey}". Add it to ICON_MAP.`,
+        `[CategoryCard] Unmapped icon key: "${iconKey}". Add it to ICON_MAP.`
       );
     }
     return FALLBACK_ICON;
@@ -83,7 +83,7 @@ export function CategoryCard({
           'backdrop-blur-xl border border-white/30 dark:border-white/10',
           'shadow-card transition-all duration-300 ease-out',
           'hover:shadow-card-hover hover:scale-[1.02]',
-          className,
+          className
         )}
         style={{
           background: `linear-gradient(135deg, ${category.color}20 0%, ${category.color}10 100%)`,

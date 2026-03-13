@@ -1,11 +1,11 @@
 // components/layout/section-header.tsx
 // ✅ No 'use client' — removed. Uses only Link and Button which are server-compatible.
 // Previously marked 'use client' with zero client-side logic, unnecessarily shipping JS.
-
 import Link from 'next/link';
 
-import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
+
+import { Button } from '../ui/button';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -40,7 +40,7 @@ export function SectionHeader({
       className={cn(
         'mb-4 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4',
         align === 'center' && 'text-center items-center',
-        className,
+        className
       )}
     >
       <div>

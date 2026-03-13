@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
+
 import { NAV_LINKS, SITE_CONFIG } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 
@@ -166,7 +167,7 @@ export function Header(): React.JSX.Element {
           id={MOBILE_MENU_ID}
           className={cn(
             'md:hidden grid transition-[grid-template-rows] duration-300 ease-in-out',
-            mobileMenuOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]',
+            mobileMenuOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
           )}
           aria-hidden={!mobileMenuOpen}
         >

@@ -1,6 +1,7 @@
 // components/layout/container.tsx
-import { cn } from '@/lib/utils';
 import React from 'react';
+
+import { cn } from '@/lib/utils';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -33,7 +34,7 @@ export function Container({
       className={cn(
         'mx-auto w-full px-4 sm:px-6 lg:px-8',
         SIZE_CLASSES[size],
-        className,
+        className
       )}
       {...props}
     >

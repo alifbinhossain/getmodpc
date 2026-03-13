@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 
 import { AppCard } from '@/components/cards/app-card';
 import { CategoryCard } from '@/components/cards/category-card';
+
 import {
   appCategories,
   gameCategories,

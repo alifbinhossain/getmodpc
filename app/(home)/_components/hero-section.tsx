@@ -4,6 +4,9 @@ import * as React from 'react';
 
 import Autoplay from 'embla-carousel-autoplay';
 
+import { HeroAppCard } from '@/components/cards/hero-app-card';
+import { Container } from '@/components/layout/container';
+import { SectionHeader } from '@/components/layout/section-header';
 import {
   Carousel,
   CarouselContent,
@@ -11,9 +14,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { HeroAppCard } from '@/components/cards/hero-app-card';
-import { Container } from '@/components/layout/container';
-import { SectionHeader } from '@/components/layout/section-header';
+
 import { SECTION_HEADERS } from '@/lib/constants';
 import { HeroSlide } from '@/lib/types';
 
@@ -29,7 +30,7 @@ export function HeroSection({
   slides,
 }: HeroSectionProps): React.JSX.Element | null {
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true }),
+    Autoplay({ delay: 5000, stopOnInteraction: true })
   );
 
   // Guard: Embla's behavior with zero items is undefined and may throw.

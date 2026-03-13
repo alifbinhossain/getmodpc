@@ -1,6 +1,5 @@
 // components/cards/platform-icon.tsx
 // ─── Extracted from app-card.tsx and hero-app-card.tsx where it was duplicated verbatim ───
-
 import { PLATFORM_COLORS } from '@/lib/constants';
 import type { Platform } from '@/lib/types';
 

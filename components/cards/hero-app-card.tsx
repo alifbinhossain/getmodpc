@@ -1,15 +1,17 @@
 // components/cards/hero-app-card.tsx
 // ✅ Renamed from herp-app-card.tsx — was a typo baked into every import path.
 // ✅ priority is now a prop — previously ALL slides had priority=true simultaneously.
-
-import { Download, Star } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Download, Star } from 'lucide-react';
+
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
+
 import { App } from '@/lib/types';
 import { cn, formatDownloads } from '@/lib/utils';
+
 import { PlatformIconList } from '../platform-icon';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -35,7 +37,7 @@ export function HeroAppCard({
           'bg-linear-to-br from-white/70 to-white/40 dark:from-black/40 dark:to-black/20',
           'backdrop-blur-xl border border-white/30 dark:border-white/10',
           'shadow-glass transition-all duration-500 ease-out',
-          'hover:shadow-glass-hover hover:border-primary/20 hover:scale-[1.01]',
+          'hover:shadow-glass-hover hover:border-primary/20 hover:scale-[1.01]'
         )}
       >
         {/* Banner Image */}

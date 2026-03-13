@@ -107,11 +107,11 @@ export function CategoryCard({
 
           {/* Icon Container */}
           <div
-            className='h-12 w-12 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6'
-            style={{ backgroundColor: `${category.color}40` }}
+            className='size-10 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6'
+            style={{ backgroundColor: `${category.color}70` }}
             aria-hidden='true'
           >
-            <span style={{ color: category.color }}>{icon}</span>
+            <span className='text-neutral-700'>{icon}</span>
           </div>
         </CardContent>
 

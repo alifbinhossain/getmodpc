@@ -2,6 +2,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
+import { Footer } from '@/components/layout/footer';
+
 import { SITE_CONFIG } from '@/lib/constants';
 
 import './styles/globals.css';
@@ -36,35 +38,7 @@ export default function RootLayout({
         <div className='relative flex min-h-screen flex-col'>
           {/* <Header /> */}
           <main className='flex-1'>{children}</main>
-          <footer className='border-t border-border/50 bg-glass backdrop-blur-xl'>
-            <div className='container-custom py-8'>
-              <div className='flex flex-col md:flex-row justify-between items-center gap-4'>
-                <p className='text-sm text-muted-foreground'>
-                  © 2024 {SITE_CONFIG.name}. All rights reserved.
-                </p>
-                <div className='flex gap-6 text-sm text-muted-foreground'>
-                  <a
-                    href='/privacy'
-                    className='hover:text-foreground transition-colors'
-                  >
-                    Privacy Policy
-                  </a>
-                  <a
-                    href='/terms'
-                    className='hover:text-foreground transition-colors'
-                  >
-                    Terms of Service
-                  </a>
-                  <a
-                    href='/contact'
-                    className='hover:text-foreground transition-colors'
-                  >
-                    Contact
-                  </a>
-                </div>
-              </div>
-            </div>
-          </footer>
+          <Footer />
         </div>
       </body>
     </html>

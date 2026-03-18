@@ -56,7 +56,7 @@ export function HomeSection<T extends { id: string | number }>({
   renderItem,
   variant = 'default',
   gridClassName = DEFAULT_GRID_CLASS,
-  wrapperClassName = 'bg-white p-4 border border-[#dee2e6] rounded-[16px] shadow-sm',
+  wrapperClassName = '',
   className,
 }: HomeSectionProps<T>): React.JSX.Element | null {
   // Empty-state guard — previously all 8 sections would render an orphaned

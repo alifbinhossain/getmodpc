@@ -3,6 +3,8 @@
 @import 'shadcn/tailwind.css';
 
 @import './glass-card.css';
+@import './glass-button.css';
+@import './social-icon.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -147,7 +149,7 @@
 
   /* Section Spacing Utility */
   .section-spacing {
-    @apply pb-8;
+    @apply pb-12;
   }
 }
 

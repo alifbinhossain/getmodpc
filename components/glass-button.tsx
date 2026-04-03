@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 import { cn } from '@/lib/utils';
 
@@ -8,13 +8,25 @@ const GlassButton: React.FC<{
   children: React.ReactNode;
 }> = ({ className, children }) => {
   return (
-    <div className='glass-card-effect-wrapper'>
+    <div
+      className='glass-card-effect-wrapper'
+      style={
+        {
+          '--glass-border-radius': '999px',
+        } as CSSProperties
+      }
+    >
       <button
         className={cn(
           'glass-card',
           'font-medium! text-sm!  relative z-10 ',
           className
         )}
+        style={
+          {
+            '--glass-border-radius': '999px',
+          } as CSSProperties
+        }
       >
         <span
           className={'flex! items-center justify-between gap-x-1 px-4 py-2.5'}
@@ -22,7 +34,14 @@ const GlassButton: React.FC<{
           {children}
         </span>
       </button>
-      {/* <div className='glass-card-shadow'></div> */}
+      <div
+        className='glass-card-shadow'
+        style={
+          {
+            '--glass-border-radius': '999px',
+          } as CSSProperties
+        }
+      ></div>
     </div>
   );
 };

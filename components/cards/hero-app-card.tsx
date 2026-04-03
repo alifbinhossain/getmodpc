@@ -22,7 +22,7 @@ export function HeroAppCard({
   priority = false,
 }: HeroAppCardProps): React.JSX.Element {
   return (
-    <Link href={`/app/${app.id}`} className='glass-card-effect-wrapper block'>
+    <Link href={`/app/${app.id}`} className='glass-card-effect-wrapper'>
       {/* Content Area */}
       <button className='glass-card'>
         {/* Banner Image */}
@@ -54,7 +54,7 @@ export function HeroAppCard({
       </button>
 
       {/* Shadow */}
-      {/* <div className='glass-card-shadow'></div> */}
+      <div className='glass-card-shadow'></div>
     </Link>
   );
 }

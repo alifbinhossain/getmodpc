@@ -41,7 +41,7 @@
   position: absolute;
   z-index: 0;
   inset: 0;
-  border-radius: 999px;
+  border-radius: var(--glass-border-radius);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
   width: calc(100% - var(--shadow-cuttoff-fix) - 0.25em);
   height: calc(100% - var(--shadow-cuttoff-fix) - 0.25em);

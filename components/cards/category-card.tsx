@@ -4,8 +4,6 @@ import { CSSProperties } from 'react';
 
 import Link from 'next/link';
 
-import { Card, CardContent, CardTitle } from '@/components/ui/card';
-
 import { Category } from '@/lib/types';
 import { cn } from '@/lib/utils';
 
@@ -80,57 +78,49 @@ export function CategoryCard({
   return (
     <Link
       href={`/category/${category.id}`}
-      className='glass-card-effect'
+      className={cn('glass-card-effect-wrapper', className)}
       style={
         {
-          '--global--size': '1.5rem',
+          '--glass-border-radius': '12px',
         } as CSSProperties
       }
     >
-      <div
-        className={cn('glass-card-effect-wrapper', className)}
+      <button
+        className={'glass-card'}
         style={
           {
             '--glass-border-radius': '12px',
           } as CSSProperties
         }
       >
-        <button
-          className={'glass-card'}
-          style={
-            {
-              '--glass-border-radius': '12px',
-            } as CSSProperties
-          }
+        <div
+          style={{
+            background: `linear-gradient(135deg, ${category.color}40 0%, ${category.color}10 100%)`,
+          }}
+          className='p-4 rounded-[12px] flex items-center justify-between gap-1'
         >
-          <div
-            style={{
-              background: `linear-gradient(135deg, ${category.color}40 0%, ${category.color}10 100%)`,
-            }}
-            className='p-4 rounded-[12px] flex items-center justify-between gap-1'
-          >
-            <div>
-              <h5 className='text-xs font-medium text-foreground group-hover:text-primary transition-colors'>
-                {category.title}
-              </h5>
-              {/* {category.count != null && (
+          <div>
+            <h5 className='text-xs font-medium text-foreground group-hover:text-primary transition-colors'>
+              {category.title}
+            </h5>
+            {/* {category.count != null && (
               <p className='text-sm text-muted-foreground mt-0.5'>
                 {category.count} apps
               </p>
             )} */}
-            </div>
-
-            {/* Icon Container */}
-            <div
-              className='size-10 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6'
-              style={{ backgroundColor: `${category.color}70` }}
-              aria-hidden='true'
-            >
-              <span className='text-neutral-700'>{icon}</span>
-            </div>
           </div>
-        </button>
-      </div>
+
+          {/* Icon Container */}
+          <div
+            className='size-10 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6'
+            style={{ backgroundColor: `${category.color}70` }}
+            aria-hidden='true'
+          >
+            <span className='text-neutral-700'>{icon}</span>
+          </div>
+        </div>
+      </button>
+      <div className='glass-card-shadow'></div>
     </Link>
   );
 }

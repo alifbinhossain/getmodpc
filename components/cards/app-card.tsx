@@ -21,13 +21,12 @@ export function AppCard({ app, className }: AppCardProps): React.JSX.Element {
   return (
     <Link
       href={`/app/${app.id}`}
-      className={cn('glass-card-effect', className)}
+      className={cn('glass-card-effect-wrapper', className)}
     >
-      <div className='glass-card-effect-wrapper'>
-        <button className='glass-card'>
-          <AppCardInfo app={app} />
-        </button>
-      </div>
+      <button className='glass-card'>
+        <AppCardInfo app={app} />
+      </button>
+      <div className='glass-card-shadow'></div>
     </Link>
   );
 }

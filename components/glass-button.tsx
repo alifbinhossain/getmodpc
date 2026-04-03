@@ -8,24 +8,21 @@ const GlassButton: React.FC<{
   children: React.ReactNode;
 }> = ({ className, children }) => {
   return (
-    <div className='button-wrap'>
+    <div className='glass-card-effect-wrapper'>
       <button
         className={cn(
-          'button',
+          'glass-card',
           'font-medium! text-sm!  relative z-10 ',
           className
         )}
       >
         <span
-          className={cn(
-            'span',
-            'flex! items-center! justify-between! gap-x-1! px-4! py-2.5!'
-          )}
+          className={'flex! items-center justify-between gap-x-1 px-4 py-2.5'}
         >
           {children}
         </span>
       </button>
-      <div className='button-shadow'></div>
+      {/* <div className='glass-card-shadow'></div> */}
     </div>
   );
 };
